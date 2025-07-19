@@ -60,7 +60,7 @@ apache_configuration() {
                 echo "Path Exists"
         fi
 
-        sed -i 's/ServerAdmin webmaster@localhost/SeverAdmin webmaster@example.com/g' /etc/apache2/sites-available/example.com.conf
+        sed -i 's/ServerAdmin webmaster@localhost/ServerAdmin webmaster@example.com/g' /etc/apache2/sites-available/example.com.conf
 
         sed -i 's/DocumentRoot /var/www.html/ /var/www/example.com/public/g' /etc/apache/sites-available/example.com.conf
 

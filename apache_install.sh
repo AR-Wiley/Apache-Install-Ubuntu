@@ -15,7 +15,6 @@ update() {
         fi
 
         echo "Upgrade Completed"
-
 }
 
 apache_installation() {
@@ -31,7 +30,6 @@ apache_installation() {
                 fi
                 echo "Apache Installation Completed"
         fi
-
 }
 
 
@@ -64,14 +62,11 @@ apache_configuration() {
 
         sed -i 's/DocumentRoot /var/www.html/ /var/www/example.com/public/g' /etc/apache/sites-available/example.com.conf
 
-
         sudo a2ensite example.com
 
         sudo systemctl restart apache2
 
 }
-
-
 
 update
 apache_installation
